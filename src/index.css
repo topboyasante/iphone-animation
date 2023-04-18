@@ -1,0 +1,50 @@
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-color: #121212;
+  color: white;
+}
+
+.prev-text{
+  font-size: 5rem;
+  padding: 2.5em;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  height:100vh;
+  width: 100vw;
+  margin: 45px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-container .phone{
+  width: 400px;
+  transform: rotate(90deg);
+  transition: transform 1s ease-out;
+
+  position: absolute;
+  left: 0;
+
+  z-index: 1;
+}
+
+.main-container .music-image{
+  position: absolute;
+  left:40%;
+  z-index: -1;
+  width: 300px;
+  display: none;
+}
+.main-container .idea-image{
+  position: absolute;
+  right:40%;
+  z-index: -1;
+  width: 300px;
+  display: none;
+}
